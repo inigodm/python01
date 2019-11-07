@@ -17,6 +17,7 @@ def stringContieneTodosCaracteres(p1, p2):
     for letra in p1:
         if not stringContieneCaracter(p2, letra):
             return False
+    return True
 
 p1 = input("Palabra 1: ")
 p2 = input("Palabra 2: ")
