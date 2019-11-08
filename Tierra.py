@@ -18,6 +18,7 @@ def tierra(angulos):
         listaHex.append(valorHexadecimal)  
 
     mensajeDecodificado = ""
+    
     while listaHex != []:
         elemento1 = listaHex.pop(0)
         elemento2 = listaHex.pop(0)
