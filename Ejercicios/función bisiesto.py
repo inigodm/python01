@@ -6,20 +6,22 @@ De los restantes, cualquier año dividido entre 100 no lo es.
 De los restantes, cualquier año dividido entre 4 es bisiesto.
 Los demás, no lo son.
 '''
+anno = int(input("Año: "))
 
 def annoBisiesto(anno):
+    resultado = False
     if anno % 400 == 0:
-        anno = True
-        print(anno)
+        resultado = True
     elif anno % 100 == 0:
-        anno = False
-        print(anno)
+        resultado = False
     elif anno % 4 == 0:
-        anno = True
-        print(anno)
-    else:
-       anno = False
-       print(anno)
+        resultado = True
+    return resultado
+
+print("El año {} es bisiesto: {}". format(anno, annoBisiesto(anno)))
+
+
+       
 
 
 
